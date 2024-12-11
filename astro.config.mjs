@@ -4,10 +4,11 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
   integrations: [
     starlight({
+		// contentRoot: './src/content/docs/en',
       title: {
         en: 'DOCUMENTATION | SNIGDHA OS',
-        'hi-IN': 'प्रलेखन | स्निग्धा ओएस',
-        'bn-BD': 'ডকুমেন্টেশন | স্নিগ্ধা ওএস',
+        'hi': 'प्रलेखन | स्निग्धा ओएस',
+        'bn': 'ডকুমেন্টেশন | স্নিগ্ধা ওএস',
       },
       defaultLocale: 'en',
       locales: {
@@ -15,17 +16,21 @@ export default defineConfig({
           label: 'English',
           lang: 'en',
         },
-        'hi-IN': {
+        'hi': {
           label: 'हिन्दी',
-          lang: 'hi-IN',
+          lang: 'hi',
         },
-        'bn-BD': {
+        'bn': {
           label: 'বাংলা',
-          lang: 'bn-BD',
+          lang: 'bn',
         },
       },
       social: {
         github: 'https://github.com/Snigdha-OS/',
+        // twitter: 'https://twitter.com',
+        // discord: 'https://discord.com',
+        // blueSky: 'https://bsky.app',
+        rss: 'https://dev.to/SnigdhaOS', // Added dev.to link
       },
       sidebar: [
         // {
@@ -34,10 +39,10 @@ export default defineConfig({
         //     { label: 'Overview', slug: 'introduction/overview' },
         //   ],
         // },
-        {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' },
-        },
+        // {
+        //   label: 'Reference',
+        //   autogenerate: { directory: 'reference' },
+        // },
       ],
     }),
   ],
