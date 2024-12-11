@@ -10,6 +10,9 @@ export default defineConfig({
         'hi': 'प्रलेखन | स्निग्धा ओएस',
         'bn': 'ডকুমেন্টেশন | স্নিগ্ধা ওএস',
       },
+	  editLink: {
+		baseUrl: 'https://github.com/Snigdha-OS/docs/edit/master',
+	},
       defaultLocale: 'en',
       locales: {
         en: {
@@ -33,12 +36,13 @@ export default defineConfig({
         rss: 'https://dev.to/SnigdhaOS', // Added dev.to link
       },
       sidebar: [
-        // {
-        //   label: 'Introduction',
-        //   items: [
-        //     { label: 'Overview', slug: 'introduction/overview' },
-        //   ],
-        // },
+        {
+          label: 'Introduction',
+          items: [
+            { label: 'Overview', slug: 'introduction/overview' },
+			{ label: 'Story', slug: 'introduction/story' },
+          ],
+        },
         // {
         //   label: 'Reference',
         //   autogenerate: { directory: 'reference' },
