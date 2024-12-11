@@ -1,0 +1,34 @@
+---
+title: স্নিগ্ধা ওএস
+description: স্টারলাইট দিয়ে আপনার ডকস সাইট তৈরি শুরু করুন।
+template: splash
+hero:
+  tagline: একটি নতুন স্টারলাইট প্রজেক্ট সেটআপ করার জন্য অভিনন্দন!
+  actions:
+    - text: উদাহরণ গাইড
+      link: /introduction/example/
+      icon: right-arrow
+    - text: স্টারলাইট ডকস পড়ুন
+      link: https://starlight.astro.build
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## পরবর্তী পদক্ষেপ
+
+<CardGrid stagger>
+	<Card title="বিষয়বস্তু আপডেট করুন" icon="pencil">
+		`src/content/docs/index.mdx` সম্পাদনা করুন এবং এই পৃষ্ঠায় পরিবর্তন দেখুন।
+	</Card>
+	<Card title="নতুন বিষয়বস্তু যোগ করুন" icon="add-document">
+		`src/content/docs`-এ Markdown বা MDX ফাইল যোগ করুন নতুন পৃষ্ঠা তৈরি করতে।
+	</Card>
+	<Card title="আপনার সাইট কনফিগার করুন" icon="setting">
+		আপনার `sidebar` এবং অন্যান্য কনফিগারেশন `astro.config.mjs`-এ সম্পাদনা করুন।
+	</Card>
+	<Card title="ডকস পড়ুন" icon="open-book">
+		[স্টারলাইট ডকস](https://starlight.astro.build/) থেকে আরও জানুন।
+	</Card>
+</CardGrid>

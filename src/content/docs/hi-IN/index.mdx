@@ -1,0 +1,34 @@
+---
+title: स्निग्धा ओएस
+description: Starlight के साथ अपना डॉक्स साइट बनाना शुरू करें।
+template: splash
+hero:
+  tagline: एक नया Starlight प्रोजेक्ट सेटअप करने पर बधाई!
+  actions:
+    - text: उदाहरण गाइड
+      link: /introduction/example/
+      icon: right-arrow
+    - text: Starlight डॉक्स पढ़ें
+      link: https://starlight.astro.build
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## अगले कदम
+
+<CardGrid stagger>
+	<Card title="सामग्री अपडेट करें" icon="pencil">
+		`src/content/docs/index.mdx` को संपादित करें और इस पेज में बदलाव देखें।
+	</Card>
+	<Card title="नई सामग्री जोड़ें" icon="add-document">
+		`src/content/docs` में Markdown या MDX फाइलें जोड़ें ताकि नए पेज बनाए जा सकें।
+	</Card>
+	<Card title="अपनी साइट कॉन्फ़िगर करें" icon="setting">
+		अपना `sidebar` और अन्य सेटिंग्स `astro.config.mjs` में संपादित करें।
+	</Card>
+	<Card title="डॉक्स पढ़ें" icon="open-book">
+		[Starlight डॉक्स](https://starlight.astro.build/) में अधिक जानें।
+	</Card>
+</CardGrid>
