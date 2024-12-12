@@ -1,33 +1,58 @@
-# Starlight Starter Kit: Basics
-
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+# Development Guide: Basics
 
 ```
-npm create astro@latest -- --template starlight
+git clone https://github.com/Snigdha-OS/docs.git
+cd docs
+pnpm install
+pnpm dev
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ## 🚀 Project Structure
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+Inside of docs folder, you'll see the following folders and files:
 
 ```
 .
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
 ├── astro.config.mjs
+├── node_modules
+│   ├── astro -> .pnpm/astro@4.16.17_rollup@4.28.1_typescript@5.7.2/node_modules/astro
+│   ├── @astrojs
+│   │   └── starlight -> ../.pnpm/@astrojs+starlight@0.29.2_astro@4.16.17_rollup@4.28.1_typescript@5.7.2_/node_modules/@astrojs/starlight
+│   └── sharp -> .pnpm/sharp@0.32.6/node_modules/sharp
 ├── package.json
+├── pnpm-lock.yaml
+├── public
+│   └── favicon.svg
+├── push.sh
+├── README.md
+├── src
+│   ├── assets
+│   │   ├── snigdhaos-docs-dark.svg
+│   │   └── snigdhaos-docs-light.svg
+│   ├── content
+│   │   ├── config.ts
+│   │   ├── docs
+│   │   │   ├── bn
+│   │   │   │   ├── index.mdx
+│   │   │   │   └── introduction
+│   │   │   │       ├── overview.md
+│   │   │   │       └── story.md
+│   │   │   ├── en
+│   │   │   │   ├── contributing.md
+│   │   │   │   ├── index.mdx
+│   │   │   │   └── introduction
+│   │   │   │       ├── overview.md
+│   │   │   │       └── story.md
+│   │   │   ├── hi
+│   │   │   │   ├── index.mdx
+│   │   │   │   └── introduction
+│   │   │   │       ├── overview.md
+│   │   │   │       └── story.md
+│   │   │   └── index.mdx
+│   │   └── i18n
+│   │       ├── bn.json
+│   │       └── in.json
+│   └── env.d.ts
 └── tsconfig.json
 ```
 
@@ -41,14 +66,14 @@ Static assets, like favicons, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command                    | Action                                           |
+| :------------------------- | :----------------------------------------------- |
+| `pnpm install`             | Installs dependencies                            |
+| `pnpm dev`                 | Starts local dev server at `localhost:4321`      |
+| `pnpm run build`           | Build your production site to `./dist/`          |
+| `pnpm run preview`         | Preview your build locally, before deploying     |
+| `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm run astro -- --help` | Get help using the Astro CLI                     |
 
 ## 👀 Want to learn more?
 
