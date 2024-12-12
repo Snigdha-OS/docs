@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://Snigdha-OS.github.io',
+  site: 'https://Snigdha-OS.github.io/',
   base: '/docs/',
   integrations: [
     starlight({
@@ -38,7 +38,7 @@ export default defineConfig({
       },
       social: {
         github: 'https://github.com/Snigdha-OS/',
-        rss: 'https://dev.to/SnigdhaOS', // Added dev.to link
+        gitlab: 'https://gitlab.com/Snigdha-OS', // Added dev.to link
       },
       sidebar: [
         {
