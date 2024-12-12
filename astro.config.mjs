@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   site: 'https://Snigdha-OS.github.io',
-  base: 'docs',
+  base: '/docs/',
   integrations: [
     starlight({
       title: {
