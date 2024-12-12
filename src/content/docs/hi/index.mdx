@@ -1,34 +1,44 @@
 ---
 title: स्निग्धा ओएस
-description: Starlight के साथ अपना डॉक्स साइट बनाना शुरू करें।
+description: पेनिट्रेशन टेस्टिंग और एथिकल हैकिंग के लिए एक आर्च-आधारित लिनक्स वितरण।
 template: splash
 hero:
-  tagline: एक नया Starlight प्रोजेक्ट सेटअप करने पर बधाई!
+  tagline: पेनिट्रेशन टेस्टिंग और एथिकल हैकिंग के लिए आर्च-आधारित लिनक्स वितरण
   actions:
-    - text: उदाहरण गाइड
+    - text: प्रलेखन पर जाएं
       link: /docs/hi/introduction/overview/
-      icon: right-arrow
-    - text: Starlight डॉक्स पढ़ें
+      icon: rocket
+    - text: स्निग्धा ओएस डाउनलोड करें
       link: https://starlight.astro.build
       icon: external
       variant: minimal
 ---
-
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## अगले कदम
+## डेवलपर्स और योगदानकर्ताओं के लिए
 
 <CardGrid stagger>
-	<Card title="सामग्री अपडेट करें" icon="pencil">
-		`src/content/docs/index.mdx` को संपादित करें और इस पेज में बदलाव देखें।
-	</Card>
-	<Card title="नई सामग्री जोड़ें" icon="add-document">
-		`src/content/docs` में Markdown या MDX फाइलें जोड़ें ताकि नए पेज बनाए जा सकें।
-	</Card>
-	<Card title="अपनी साइट कॉन्फ़िगर करें" icon="setting">
-		अपना `sidebar` और अन्य सेटिंग्स `astro.config.mjs` में संपादित करें।
-	</Card>
-	<Card title="डॉक्स पढ़ें" icon="open-book">
-		[Starlight डॉक्स](https://starlight.astro.build/) में अधिक जानें।
-	</Card>
+    <Card title="हमें अपनी सामग्री अनुवाद करने में मदद करें" icon="translate">
+      <p>हम अपनी प्रलेखन को अधिक भाषाओं में उपलब्ध कराने के लिए हमेशा तत्पर रहते हैं। आपकी मदद बहुत बड़ा अंतर ला सकती है!</p>
+      यदि आप रुचि रखते हैं, तो <code>src/content/docs/hi/index.mdx</code> फाइल को संपादित करें और अपने अनुवादों से इस पेज को बेहतर बनाएं।
+      <p>योगदान देने के लिए मार्गदर्शन पाने के लिए, हमारे <a href="/hi/contributing/">योगदान गाइड</a> पर जाएं।</p>
+    </Card>
+    <Card title="नई सामग्री जोड़ें" icon="add-document">
+      <p>क्या आप हमारी प्रलेखन को विस्तृत करना चाहते हैं? नए पेज आसानी से बनाने के लिए <code>src/content/docs/hi/</code> में मार्कडाउन या एमडीएक्स फाइलें जोड़ें।</p>
+      <p>अपनी सामग्री की संरचना के लिए सुझाव पाने के लिए हमारे <a href="/hi/contributing/">योगदान गाइड</a> पर जाएं।</p>
+    </Card>
+    <Card title="नई भाषा जोड़ें" icon="setting">
+      नई भाषा जोड़ने के लिए, उदाहरण के लिए `ru` नामक एक फोल्डर डॉक्यूमेंट फोल्डर में बनाएं।
+      ```
+      src/content/docs/
+                    ├── en/
+                    │   └── index.mdx    // होमपेज का अंग्रेज़ी संस्करण
+                    ├── hi/
+                    │   └── index.mdx    // होमपेज का हिंदी संस्करण
+                    ├── bn/
+                    │   └── index.mdx    // होमपेज का बंगाली संस्करण
+                    └── ru/
+                        └── index.mdx    // यदि आवश्यक हो, तो होमपेज का रूसी संस्करण
+      ```
+    </Card>
 </CardGrid>

@@ -1,34 +1,44 @@
 ---
 title: স্নিগ্ধা ওএস
-description: স্টারলাইট দিয়ে আপনার ডকস সাইট তৈরি শুরু করুন।
+description: পেনিট্রেশন টেস্টিং এবং এথিক্যাল হ্যাকিং এর জন্য একটি আর্চ-ভিত্তিক লিনাক্স ডিস্ট্রিবিউশন।
 template: splash
 hero:
-  tagline: একটি নতুন স্টারলাইট প্রজেক্ট সেটআপ করার জন্য অভিনন্দন!
+  tagline: পেনিট্রেশন টেস্টিং এবং এথিক্যাল হ্যাকিং এর জন্য একটি আর্চ-ভিত্তিক লিনাক্স ডিস্ট্রিবিউশন
   actions:
-    - text: উদাহরণ গাইড
-      link: /bn/introduction/overview/
-      icon: right-arrow
-    - text: স্টারলাইট ডকস পড়ুন
+    - text: ডকুমেন্টেশন দেখুন
+      link: /docs/bn/introduction/overview/
+      icon: rocket
+    - text: স্নিগ্ধা ওএস ডাউনলোড করুন
       link: https://starlight.astro.build
       icon: external
       variant: minimal
 ---
-
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## পরবর্তী পদক্ষেপ
+## ডেভেলপার এবং অবদানকারীদের জন্য
 
 <CardGrid stagger>
-	<Card title="বিষয়বস্তু আপডেট করুন" icon="pencil">
-		`src/content/docs/index.mdx` সম্পাদনা করুন এবং এই পৃষ্ঠায় পরিবর্তন দেখুন।
-	</Card>
-	<Card title="নতুন বিষয়বস্তু যোগ করুন" icon="add-document">
-		`src/content/docs`-এ Markdown বা MDX ফাইল যোগ করুন নতুন পৃষ্ঠা তৈরি করতে।
-	</Card>
-	<Card title="আপনার সাইট কনফিগার করুন" icon="setting">
-		আপনার `sidebar` এবং অন্যান্য কনফিগারেশন `astro.config.mjs`-এ সম্পাদনা করুন।
-	</Card>
-	<Card title="ডকস পড়ুন" icon="open-book">
-		[স্টারলাইট ডকস](https://starlight.astro.build/) থেকে আরও জানুন।
-	</Card>
+    <Card title="আমাদের কন্টেন্ট অনুবাদে সাহায্য করুন" icon="translate">
+      <p>আমরা সবসময় আমাদের ডকুমেন্টেশন আরও ভাষায় উপলব্ধ করার জন্য কাজ করছি। আপনার সাহায্য একটি বড় পরিবর্তন আনতে পারে!</p>
+      যদি আপনি আগ্রহী হন, তাহলে <code>src/content/docs/bn/index.mdx</code> ফাইলটি সম্পাদনা করুন এবং আপনার অনুবাদ যুক্ত করে এই পেজটিকে উন্নত করুন।
+      <p>কীভাবে অবদান রাখতে হয় তা জানতে আমাদের <a href="/bn/contributing/">অবদান গাইড</a> দেখুন।</p>
+    </Card>
+    <Card title="নতুন কন্টেন্ট যোগ করুন" icon="add-document">
+      <p>আপনি কি আমাদের ডকুমেন্টেশন আরও বিস্তৃত করতে চান? নতুন পেজ তৈরি করতে <code>src/content/docs/bn/</code> তে মার্কডাউন বা এমডিএক্স ফাইল যোগ করুন।</p>
+      <p>আপনার কন্টেন্ট গঠনের জন্য টিপস পেতে আমাদের <a href="/bn/contributing/">অবদান গাইড</a> দেখুন।</p>
+    </Card>
+    <Card title="নতুন ভাষা যোগ করুন" icon="setting">
+      নতুন ভাষা যোগ করতে, উদাহরণস্বরূপ `ru` নামে একটি ফোল্ডার ডকুমেন্ট ফোল্ডারে তৈরি করুন।
+      ```
+      src/content/docs/
+                    ├── en/
+                    │   └── index.mdx    // হোমপেজের ইংরেজি সংস্করণ
+                    ├── hi/
+                    │   └── index.mdx    // হোমপেজের হিন্দি সংস্করণ
+                    ├── bn/
+                    │   └── index.mdx    // হোমপেজের বাংলা সংস্করণ
+                    └── ru/
+                        └── index.mdx    // প্রয়োজন হলে হোমপেজের রুশ সংস্করণ
+      ```
+    </Card>
 </CardGrid>
