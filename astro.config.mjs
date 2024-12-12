@@ -2,6 +2,8 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
+  site: 'https://Snigdha-OS.github.io',
+  base: 'docs',
   integrations: [
     starlight({
       title: {
