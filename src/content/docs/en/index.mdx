@@ -1,34 +1,44 @@
 ---
 title: SNIGDHA OS
-description: Get started building your docs site with Starlight.
+description: An Arch based Linux Distribution for Penetration Testing and Ethical Hacking.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Arch based Linux Distribution for Penetration Testing and Ethical Hacking
   actions:
-    - text: Example Guide
+    - text: Go To Documentation
       link: /en/introduction/overview/
-      icon: right-arrow
-    - text: Read the Starlight docs
+      icon: rocket
+    - text: Download Snigdha OS
       link: https://starlight.astro.build
       icon: external
       variant: minimal
 ---
-
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## For Developers & Contributors
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+    <Card title="Help Us Translate Our Content" icon="translate">
+      <p>We are constantly looking to make our documentation accessible in more languages. Your help can make a big difference!</p>
+      If you are interested, edit the file at <code>src/content/docs/en/index.mdx</code> to contribute your translations and improve this page.
+      <p>For guidance on how to contribute, visit our <a href="/en/contributing/">Contributing Guide</a>.</p>
+    </Card>
+    <Card title="Add New Content" icon="add-document">
+      <p>Want to expand our documentation? Add Markdown or MDX files to <code>src/content/docs/en/</code> to create new pages easily.</p>
+      <p>Check out our <a href="/en/contributing/">Contributing Guide</a> for tips on structuring your content.</p>
+    </Card>
+    <Card title="Add New Language" icon="setting">
+    To add a new language, create a folder e.g `ru` in docs folder.
+        ```
+        src/content/docs/
+                      ├── en/
+                      │   └── index.mdx    // English version of the homepage
+                      ├── hi/
+                      │   └── index.mdx    // Hindi version of the homepage
+                      ├── bn/
+                      │   └── index.mdx    // Bengali version of the homepage
+                      └── ru/
+                          └── index.mdx    // Russian version (if needed)
+      ```
+    </Card>
 </CardGrid>
