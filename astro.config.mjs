@@ -47,6 +47,7 @@ export default defineConfig({
             { label: 'Overview', slug: 'introduction/overview' },
 			      { label: 'Story', slug: 'introduction/story' },
             { label: 'Code Of Conduct', slug: 'introduction/code-of-conduct' },
+            { label: 'Release Note', slug: 'introduction/release-note' },
           ],
         },
         // {
