@@ -18,27 +18,42 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## For Developers & Contributors
 
 <CardGrid stagger>
-    <Card title="Help Us Translate Our Content" icon="translate">
+    <Card title="🌍 Help Us Translate Our Content" icon="language">
       <p>We are constantly looking to make our documentation accessible in more languages. Your help can make a big difference!</p>
       If you are interested, edit the file at <code>src/content/docs/en/index.mdx</code> to contribute your translations and improve this page.
       <p>For guidance on how to contribute, visit our <a href="/en/contributing/">Contributing Guide</a>.</p>
     </Card>
-    <Card title="Add New Content" icon="add-document">
+    <Card title="✍️ Add New Content" icon="file-add">
       <p>Want to expand our documentation? Add Markdown or MDX files to <code>src/content/docs/en/</code> to create new pages easily.</p>
       <p>Check out our <a href="/en/contributing/">Contributing Guide</a> for tips on structuring your content.</p>
     </Card>
-    <Card title="Add New Language" icon="setting">
-    To add a new language, create a folder e.g `ru` in docs folder.
-        ```
-        src/content/docs/
-                      ├── en/
-                      │   └── index.mdx    // English version of the homepage
-                      ├── hi/
-                      │   └── index.mdx    // Hindi version of the homepage
-                      ├── bn/
-                      │   └── index.mdx    // Bengali version of the homepage
-                      └── ru/
-                          └── index.mdx    // Russian version (if needed)
-      ```
+    <Card title="🌐 Add New Language" icon="language">
+      <p>To add a new language, create a folder (e.g., `ru`) in the docs folder. The folder should contain an <code>index.mdx</code> for the homepage and relevant translation files.</p>
+      <pre><code>
+src/content/docs/
+  ├── en/
+  │   └── index.mdx    // English version of the homepage
+  ├── hi/
+  │   └── index.mdx    // Hindi version of the homepage
+  ├── bn/
+  │   └── index.mdx    // Bengali version of the homepage
+  └── ru/
+      └── index.mdx    // Russian version (if needed)
+      </code></pre>
+    </Card>
+    <Card title="📊 Improve Documentation Structure" icon="structure">
+      <p>Help us improve the structure of our documentation! Organize content, create new sections, or suggest changes to enhance the flow and readability.</p>
+      <p>For structural changes, please open an issue and discuss it before making updates. Your feedback is essential! 📝</p>
+    </Card>
+    <Card title="🐞 Fix Bugs or Errors in Docs" icon="bug">
+      <p>If you spot a typo, broken link, or error in our documentation, submit a quick fix! It's a simple way to make an impact and improve the user experience.</p>
+      <p>Look for issues labeled <code>documentation</code> in our GitHub repository to get started with fixing bugs or suggesting improvements.</p>
+    </Card>
+    <Card title="📚 Help with Tutorials & Guides" icon="book-open">
+      <p>Contribute tutorials, step-by-step guides, or troubleshooting tips for new users. These resources can help users get started quickly with Snigdha OS.</p>
+      <p>Check out our <a href="/en/docs/">documentation pages</a> for inspiration and submit your own tutorials! 📖</p>
+    </Card>
+    <Card title="📢 Promote Snigdha OS" icon="megaphone">
+      <p>Spread the word! If you love Snigdha OS, help us promote it. Write blog posts, create videos, or share about Snigdha OS on social media. Every bit of promotion helps grow the community. 🌍</p>
     </Card>
 </CardGrid>
